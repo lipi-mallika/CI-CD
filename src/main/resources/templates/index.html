@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+
+    .container {
+        max-width: 650px;
+        margin: 40px auto;
+        padding: 30px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        color: #173b70;
+        text-align: center;
+    }
+
+    .subtitle {
+        color: #64748b;
+        text-align: center;
+    }
+
+    .student-card {
+        background: #eef5ff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 25px;
+    }
+
+    .status {
+        color: #16803c;
+        font-weight: bold;
+    }
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management System</h1>
+        <p class="subtitle">Welcome to our web application!</p>
+
+
+    <div class="student-card">
+        <h2>Student Details</h2>
+        <p><strong>Name:</strong> <span th:text="${studentName}">Student</span></p>
+        <p><strong>Student ID:</strong> <span th:text="${studentId}">STU101</span></p>
+        <p><strong>Course:</strong> <span th:text="${course}">CSE</span></p>
+        <p><strong>Status:</strong> <span class="status">Application Ready</span></p>
+    </div>
+</div>
+
+
+</body>
+</html>
